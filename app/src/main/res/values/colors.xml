@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3AA67F</color>
+    <color name="colorPrimaryDark">#29795c</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorTitulo">#3AA67F</color>
+    <color name="colorSubtitulo">#000000</color>
+    <color name="colorImageButton">#FFFFFF</color>
+    <color name="testeG1">#50f7f0</color>
+    <color name="testeG2">#3cbfba</color>
+    <color name="testeG3">#fad91d</color>
+    <color name="testeG4">#af970f</color>
+    <color name="testeG5">#f7060a</color>
+    <color name="testeG6">#a40609</color>
+
+</resources>

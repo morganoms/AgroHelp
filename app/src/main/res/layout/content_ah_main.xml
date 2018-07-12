@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.morganoliveira.agrohelp.View.AH_main"
+    tools:showIn="@layout/app_bar_ah_main">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/logoso"
+            tools:layout_editor_absoluteY="0dp" />
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        tools:ignore="MissingConstraints">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="0dp"
+                            android:layout_weight="1"
+                            android:background="@color/testeG1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="30dp"
+                                android:src="@drawable/icons8b" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/testeG2"
+                                android:textSize="16sp"
+                                android:textAlignment="center"
+                                android:layout_marginTop="20dp"
+                                android:text="Biblioteca" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="0dp"
+                            android:layout_weight="1"
+                            android:background="@color/testeG3"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="30dp"
+                                android:src="@drawable/icons8c" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/testeG4"
+                                android:textSize="16sp"
+                                android:textAlignment="center"
+                                android:layout_marginTop="20dp"
+                                android:text="Biblioteca" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+</android.support.constraint.ConstraintLayout>

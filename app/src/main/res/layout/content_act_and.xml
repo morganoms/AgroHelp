@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/colorImageButton"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.morganoliveira.agrohelp.View.act_and"
+    tools:showIn="@layout/activity_act_and">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="12dp"
+        android:elevation="0dp"
+        android:text="Escolha uma Cultura"
+        android:textAlignment="center"
+        android:textColor="@color/colorSubtitulo"
+        android:textSize="24dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButton19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorImageButton"
+                app:srcCompat="@drawable/milho2" />
+
+            <ImageButton
+                android:id="@+id/imageButton20"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/colorImageButton"
+                app:srcCompat="@drawable/alface" />
+
+            <ImageButton
+                android:id="@+id/imageButton21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorImageButton"
+                app:srcCompat="@drawable/mandioca" />
+
+            <ImageButton
+                android:id="@+id/imageButton23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorImageButton"
+                app:srcCompat="@drawable/cana2" />
+
+            <ImageButton
+                android:id="@+id/imageButton25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorImageButton"
+                app:srcCompat="@drawable/tomate" />
+
+            <ImageButton
+                android:id="@+id/imageButton26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorImageButton"
+                app:srcCompat="@drawable/feijao" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

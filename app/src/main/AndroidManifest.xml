@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.morganoliveira.agrohelp">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".View.splash"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".View.AH_main"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".View.act_and"
+            android:label="@string/title_activity_act_and"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View.sintomas"
+            android:label="@string/title_activity_sintomas"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View.act_biblioteca"
+            android:label="@string/title_activity_act_biblioteca"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View.ItemTermo"
+            android:label="@string/title_activity_item_termo"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
